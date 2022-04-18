@@ -1,0 +1,258 @@
+.navbar{
+    font-family: 'Lobster', cursive;
+}
+.section-title{
+    font-family: 'Lobster', cursive;
+}
+.nav-item {
+    margin-right: 5%;
+}
+.nav-link:hover, .navbar-brand:hover{
+    color: #00ADB5 !important;
+}
+
+.hero{
+    background-color: #EEEEEE;
+    padding: 5%;
+    text-align: center;
+}
+.icon-socialmedia {
+    margin-left: 10px;
+}
+.img-container {
+    float:left;
+}
+.myphoto-image {
+    border-radius: 60%;
+    margin: 10% 5% 5% 5%;
+    width: 60%;
+    opacity: 0.9;
+}
+
+.title-container {
+    background-color: #C4C4C4;
+    border-radius: 5%;
+    padding: 5%;
+    margin: 5%;
+    font-family: "work sans";
+    font-weight: bold;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px;
+    height: 45%;
+}
+.main-title {
+    color:#00ADB5;
+}
+.home-subtitle {
+    overflow: hidden; 
+    border-right: .15em solid #00ADB5; 
+    white-space: nowrap; 
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end;
+  } 
+  /* adding typing animation to the presentation text*/
+  /*agregando animación al texto de presentacion */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #00ADB5; }
+  }
+
+.about{
+    background-color: #00ADB5;
+    padding: 3%;
+}
+.info {
+    border-radius: 5%;
+    padding: 4%;
+    margin: 2% 1% 5% 5%;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: bold;
+}
+.info-text {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.computer-image{
+    width: 120%;
+    border-radius: 5px;
+    margin-left: 30%;
+}
+.skills{
+    background-color: #222831;
+    padding: 3%;
+}
+.skills-subtitle{
+    font-family: 'Work Sans', sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+    color: #C4C4C4 !important;
+}
+.portfolio{
+    padding: 3%;
+    font-family: 'Work Sans', sans-serif;
+    text-align: center;
+}
+.portfolio-title{
+    text-align: left;
+    color: #00ADB5;
+}
+.portfolio-subtitle{
+    font-style: italic;
+    font-weight: bold;
+}
+
+.project-card:hover{
+    border: 5px solid white;
+    filter: brightness(1.1);
+}
+.card-body{
+    background-color: #C4C4C4;
+    height: 80%;
+    padding: 5%;
+    font-family: 'Work Sans', sans-serif;
+}
+.card-button-page{
+    background-color: #00ADB5;
+    color: white;
+}
+.card-button-repo{
+    background-color: #393E46;
+    color: white;
+}
+.bars-container{
+    margin: 2% 2% 3% 4%;
+}
+
+.skill-label {
+    margin-top: 5px; ;
+} 
+.skill-icon{
+    margin: 2% 0% 2% 0%; 
+    width: 10%;
+}
+.skill-bar {
+    background-color: #00ADB5;
+}
+/*adding loading animation to skills bars */
+/*agreganod animacion a las barras de habilidades*/
+.load-bar{
+    animation: bar 2.5s linear;
+}
+@keyframes bar{
+    0% {
+        width: 0%;
+    }
+    20%
+    {
+        width: 20%;
+    }
+    50%{
+        width: 50%;
+    }
+    70%{
+        width: 70%;
+    }
+}
+
+.portfolio{
+    background-color: #FFFFFF;
+}
+.education, .certifications{
+    background-color: #222831;
+    padding: 3%;
+}
+.education-list{
+    margin-top: 5%;
+    list-style: none;
+}
+
+.university{
+    color: #8c9096;
+}
+
+.contact{
+    background-color:  #00ADB5;
+    padding: 5%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.contact-title{
+    color: #FFFFFF;
+}
+.whatsappLink.mobile{
+    display: none;
+   
+  }
+
+.phone-mail-container{
+    margin: 3%; 
+}
+
+.form-area
+{
+    background-color: #4f5661;
+    padding: 5%;
+    border-radius: 5%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.form-control{
+    margin: 5px 0px;
+}
+.contact-text{
+    color: #222831;
+    font-style: italic;
+}
+.message-text{
+    resize:none;
+} 
+
+.send-button{
+    background-color: #00ADB5;
+}
+.footer{
+    padding-top: 2%;
+    background-color: #393E46;
+    text-align: center;
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    display: none;
+}
+/*changing behavior for small screen devices */
+/*adaptando el comportamiento para dispositivos con pantallas pequeñas*/
+
+@media (max-width: 992px) {
+    .progress{
+        visibility: hidden;
+    }
+    .skill-icon{
+       width: 35%;
+       height: 35%;
+    }
+    .computer-image{
+        display: none;
+    }
+    .info {
+        margin:1%; 
+    }
+    .whatsappLink.desktop {
+        display: none;
+      }
+      .whatsappLink.mobile{
+        display: inline;
+      }
+    .myphoto-image{
+        width: 80%;
+        margin-top: 30%;
+    }
+   .title-container{
+        padding: 20%;
+        margin: 2%;
+    } 
+}
